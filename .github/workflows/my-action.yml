@@ -1,0 +1,17 @@
+# Name of your workflows
+name: My test workflow
+
+#Define the trigger event
+on: [push]
+
+#Jobs run in parallel by default, eash runs steps in sequence
+Jobs:
+
+    #Job to print something out
+    say-hello:
+        runs-on: ubunto-latest
+        steps:
+          -  run:  echo "Hello, Github Actions!"
+          
+        
+            
