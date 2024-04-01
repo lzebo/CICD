@@ -5,9 +5,11 @@ name: My test workflow
 on: [push]
 
 #Jobs run in parallel by default, eash runs steps in sequence
-Jobs:
+jobs:
+
     #Job to print something out
     say-hello:
         runs-on: ubunto-latest
         steps:
           -  run:  echo "Hello, Github Actions!"
+          
